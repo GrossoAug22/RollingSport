@@ -9,3 +9,35 @@
     font-family: "LilitaOne", sans-serif;
     font-size: 1.3rem;
   }
+
+  .imagen{
+    object-fit: cover;
+    height: 400px;
+    
+  }
+
+  .i1{
+    object-position: 100% 8%;
+  }
+
+  .i2{
+    object-position: 100% 37%;
+  }
+
+  .i3{
+    object-position: 100% 13%;
+  }
+
+  @media (max-width: 767px){
+    .imagen{
+      height: 300px;
+    }
+
+    .i1{    
+      object-position: 50% 30%;
+    }
+
+    .i3{
+      object-position: 70% 13%;
+    }
+  }
