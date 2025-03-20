@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.footer-icons i {
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Suaviza la animación */
+  color: white; /* Color base */
+}
+
+/* Facebook: azul en hover */
+.footer-icons .bi-facebook:hover {
+  color: #1877f2;
+}
+
+/* Twitter: celeste en hover */
+.footer-icons .bi-twitter-x:hover {
+  color: #858686;
+}
+
+/* Instagram: blanco normal, pero gradiente en hover */
+.footer-icons .bi-instagram {
+  color: white; /* Color normal */
+}
+
+.footer-icons .bi-instagram:hover {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Para agrandar un poco el ícono en hover */
+.footer-icons i:hover {
+  transform: scale(1.2);
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.error-image {
+    max-width: 100%;
+    width: 800px; /* Ajusta el tamaño según necesites */
+}
