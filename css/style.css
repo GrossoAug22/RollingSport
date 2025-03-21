@@ -112,6 +112,21 @@
     padding: 5px 20px;
 }
 
+.cardproductos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sombracard {
+  box-shadow: 0 4px 8px rgba(23, 23, 23, 0.343);
+}
+
+.card-img-top {
+  height: 350px;
+  object-fit: cover;
+}
+
+
 @media (max-width: 767px){
     .imgmenu .textoimg {
         width: 80%;
