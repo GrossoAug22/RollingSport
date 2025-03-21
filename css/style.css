@@ -1,124 +1,191 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 @font-face {
-    font-family: "LilitaOne";
-    src: url("../fonts/LilitaOne-Regular.ttf");
+  font-family: "LilitaOne";
+  src: url("../fonts/LilitaOne-Regular.ttf");
+}
+
+.marca {
+  font-family: "LilitaOne", sans-serif;
+  font-size: 1.3rem;
+}
+
+.imagen {
+  object-fit: cover;
+  height: 400px;
+}
+
+.i1 {
+  object-position: 100% 8%;
+}
+
+.i2 {
+  object-position: 100% 37%;
+}
+
+.i3 {
+  object-position: 100% 13%;
+}
+
+@media (max-width: 767px) {
+  .imagen {
+    height: 300px;
   }
 
-  .marca {
-    font-family: "LilitaOne", sans-serif;
-    font-size: 1.3rem;
+  .i1 {
+    object-position: 50% 30%;
   }
 
-  .imagen{
-    object-fit: cover;
-    height: 400px;
-    
+  .i3 {
+    object-position: 70% 13%;
   }
+}
 
-  .i1{
-    object-position: 100% 8%;
-  }
-
-  .i2{
-    object-position: 100% 37%;
-  }
-
-  .i3{
-    object-position: 100% 13%;
-  }
-
-  @media (max-width: 767px){
-    .imagen{
-      height: 300px;
-    }
-
-    .i1{    
-      object-position: 50% 30%;
-    }
-
-    .i3{
-      object-position: 70% 13%;
-    }
-
-  }
-
-  .imgmenu {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.36);
-    transition: transform 0.5s ease, filter 0.5s ease;
+.imgmenu {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.36);
+  transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .imgmenu2 {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.5s ease, filter 0.5s ease;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-.imgmenu:hover{
-    transform: scale(1.2);
-    transition: transform 0.8s, filter 0.5s;
-    filter: grayscale(20%);
+.imgmenu:hover {
+  transform: scale(1.2);
+  transition: transform 0.8s, filter 0.5s;
+  filter: grayscale(20%);
 }
 
-.imgmenu2:hover{
-    transform: scale(1.2);
-    transition: transform 0.8s, filter 0.5s;
-    filter: grayscale(20%);
+.imgmenu2:hover {
+  transform: scale(1.2);
+  transition: transform 0.8s, filter 0.5s;
+  filter: grayscale(20%);
 }
 
 .imagencover {
-    overflow: hidden;
-    position: relative;
+  overflow: hidden;
+  position: relative;
 }
 
 .textoimg {
-    position: absolute;
-    top: 90%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    font-size: 20px;
-    text-align: center;
-    padding: 5px 20px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 20px;
 }
 
-
 .textoimg2 {
-    position: absolute;
-    top: 90%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    font-size: 20px;
-    text-align: center;
-    padding: 5px 20px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 20px;
 }
 
 .textoimg3 {
-    position: relative;
-    bottom: 5%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    font-size: 18px;
-    text-align: center;
-    padding: 5px 20px;
+  position: relative;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  text-align: center;
+  padding: 5px 20px;
+}
+#seccion-categorias-home {
+  margin: 0 0 0 0;
+  background-color: rgba(255, 255, 255, 0.886);
+  padding: 50px 110px;
+}
+.categorias-home {
+  text-decoration: none;
+  color: black;
+  text-shadow: 5px black;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.148);
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.47);
+  border-radius: 15px;
+  width: 455px;
+  height: 555px;
+}
+.categorias-home:hover {
+  box-shadow: 5px 5px 5px 5px rgba(104, 101, 101, 0.368);
+  width: 455px;
+  height: 555px;
 }
 
-@media (max-width: 767px){
-    .imgmenu .textoimg {
-        width: 80%;
-        height: 90%;
-    }
- 
+#Categoria-Hombre {
+  background-image: url("../img/img-categorias/Categoria-Hombre.jpg" );
+  background-size: cover;
+background-position: 600px;
+}
+#Categoria-Hombre:hover{
+  backdrop-filter: blur(1px);
+}
+#Categoria-Niños {
+  background-image: url("../img/img-categorias/Categoria-niños.jpg");
+  background-size: cover;
+  background-position: 600px;
+}
+#Categoria-Mujeres {
+  background-image: url("../img/img-categorias/Categoria-Mujer.jpg");
+  background-size: cover;
+  background-position: 600px;
 }
 
+.nombre-categoria-home{
+  padding: 35px 40px ;
+  background-color: rgba(0, 0, 0, 0.459);
+font-weight: 700;
+color:rgb(255, 255, 255);
+box-shadow: 150px black;
+}
 
-
+@media (max-width: 767px) {
+  .imgmenu .textoimg {
+    width: 80%;
+    height: 90%;
+  }
+  .categorias-home{
+    margin-top: 55px;
+  }
+}
+@media (min-width: 767px)and(max-width:992px) {
+  #seccion-categorias-home {
+    padding: 50px 30px;
+  }
+}
+@media (min-width: 767px)and(max-width:992px) {
+  #Categoria-Hombre {
+  background-position-x: right;
+  }
+  #Categoria-Niños {
+    background-image: url("../img/img-categorias/Categoria-niños.jpg");
+    background-size: cover;
+    background-position: 600px;
+  }
+  #Categoria-Mujeres {
+    background-image: url("../img/img-categorias/Categoria-Mujer.jpg");
+    background-size: cover;
+    background-position: 600px;
+  }
+}
