@@ -124,8 +124,13 @@
 .card-img-top {
   height: 350px;
   object-fit: cover;
+  transition: transform 0.8s, filter 0.5s;
 }
 
+.card-img-top:hover {
+  transform: scale(1.2);
+  filter: grayscale(20%);
+}
 
 @media (max-width: 767px){
     .imgmenu .textoimg {
