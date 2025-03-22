@@ -126,7 +126,6 @@
   object-fit: cover;
 }
 
-
 @media (max-width: 767px){
     .imgmenu .textoimg {
         width: 80%;
