@@ -127,11 +127,6 @@
   transition: transform 0.8s, filter 0.5s;
 }
 
-.card-img-top:hover {
-  transform: scale(1.2);
-  filter: grayscale(20%);
-}
-
 @media (max-width: 767px){
     .imgmenu .textoimg {
         width: 80%;
@@ -139,5 +134,13 @@
     }
 }
 
+.rounded-circle {
+  width: 100px;  
+  height: 200px; 
+  object-fit: cover; 
+}
 
-
+.card-img-top:hover {
+  transform: scale(1.2);
+  filter: grayscale(20%);
+}
