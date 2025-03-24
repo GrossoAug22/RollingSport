@@ -35,7 +35,7 @@
                     </form>
                 </div>
                 <div class="navbar-nav ms-auto gap-1">
-                    <button class="btn btn-primary">Login</button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalcrearcuenta">Login</button>
                     <button class="btn btn-primary">Crear Cuenta</button>
                 </div>
               </div>
@@ -70,6 +70,40 @@
         </button>
       </div>
     </main>
+    <div class="modal fade" id="modalcrearcuenta" tabindex="-1" aria-labelledby="modalcrearcuentaLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="modalcrearcuentaLabel">Crea tu cuenta</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Completá los siguientes datos para crear una cuenta</p>
+            <form id="creatucuenta" autocomplete="off">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre y Apellido *</label>
+                <input type="nombre" class="form-control" id="nombre" aria-describedby="nombreHelp" required id="nombre" minlength="10" maxlength="40">
+                </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required id="email" minlength="10" maxlength="50">
+                </div>
+              <div class="mb-3">
+                <label for="contraseña" class="form-label">Contraseña *</label>
+                <input type="password" class="form-control" id="contraseña" required id="contraseña" minlength="6">
+              </div>
+                        <div class="mb-3">
+                <label for="confirmcontraseña" class="form-label">Repetir Contraseña *</label>
+                <input type="password" class="form-control" id="confirmcontraseña" required>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" form="creatucuenta">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="bg-dark text-white py-4 mt-auto">
       <div class="container">
         <div class="row text-center text-md-start">
