@@ -73,7 +73,7 @@
               >
                 Login
               </button>
-                ><button class="btn btn-primary">Crear Cuenta</button></a
+                <button type="button" class="btn btn-primary">Crear Cuenta</button></a
               >
             </div>
           </div>
@@ -232,77 +232,79 @@
       </section>
     </main>
     <div
-      class="modal fade"
-      id="modalcrearcuenta"
-      tabindex="-1"
-      aria-labelledby="modalcrearcuentaLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title fs-5" id="modalcrearcuentaLabel">
-              Ingresá a tu cuenta
-            </h2>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p>Completá los siguientes datos para ingresar a tu cuenta</p>
-            <form id="creatucuenta" autocomplete="off">
-              <div class="row">
-                <div class="col-6">
-                  <img src="./img/LOGO.jpeg" alt="logologin" class="img-fluid h-100">
-                </div>
-                <div class="col-6">
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Usuario/Email</label>
-                <input
-                  type="nombre"
-                  class="form-control"
-                  id="nombre"
-                  aria-describedby="nombreHelp"
-                  maxlength="40"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="contraseña" class="form-label">Contraseña</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="contraseña"
-                  minlength="6"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="google" class="form-label"
-                  >Iniciar sesión con Google
-                </label>
-                <button class="w-100"><i class="bi bi-google"></i></button>
-              </div>
-              <div class="mb-3">
-                <label for="google" class="form-label"
-                  >Iniciar sesión con Facebook
-                </label>
-                <button class="w-100"><i class="bi bi-facebook"></i></button>
-              </div>
-            </form>
-          </div>
+    class="modal fade"
+    id="modalcrearcuenta"
+    tabindex="-1"
+    aria-labelledby="modalcrearcuentaLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="modalcrearcuentaLabel">
+            Ingresá a tu cuenta
+          </h2>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
         </div>
-          <div class="modal-footer">
-            <a href="./pages/error404.html">¿Olvidaste tu contraseña?</a>
-            <a href="./pages/error404.html"><button class="btn btn-primary">
-              Ingresar
-            </button></a>
-          </div>
+        <div class="modal-body">
+          <p>Completá los siguientes datos para ingresar a tu cuenta</p>
+          <form id="creatucuenta" autocomplete="off">
+            <div class="row">
+              <div class="col-6">
+                <img src="../img/LOGO.jpeg" alt="logologin" class="img-fluid h-100">
+              </div>
+              <div class="col-6">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Usuario/Email</label>
+              <input
+                type="nombre"
+                class="form-control"
+                id="nombre"
+                aria-describedby="nombreHelp"
+                maxlength="40"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="contraseña" class="form-label">Contraseña</label>
+              <input
+                type="password"
+                class="form-control"
+                id="contraseña"
+                minlength="6"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="google" class="form-label"
+                >Iniciar sesión con Google
+              </label>
+              <a href="./error404.html">
+              <button type="button" class="w-100"><i class="bi bi-google"></i></button></a>
+            </div>
+            <div class="mb-3">
+              <label for="google" class="form-label"
+                >Iniciar sesión con Facebook
+              </label>
+              <a href="./error404.html">
+              <button type="button" class="w-100"><i class="bi bi-facebook"></i></button></a>
+            </div>
+          </form>
+        </div>
+      </div>
+        <div class="modal-footer">
+          <a href="./error404.html">¿Olvidaste tu contraseña?</a>
+          <a href="./error404.html"><button type="button" class="btn btn-primary">
+            Ingresar
+          </button></a>
         </div>
       </div>
     </div>
   </div>
+</div>
     <footer class="bg-dark text-white py-4 mt-auto">
       <div class="container">
         <div class="row text-center text-md-start">
@@ -433,6 +435,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
