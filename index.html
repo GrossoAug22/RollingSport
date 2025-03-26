@@ -1,93 +1,336 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Grosso Augusto, Castillo Javier, Garcia Gonzalo, Insinga Alejandro, Singh Mauro Alejandro">
-    <meta name="description" content="Pagina E-Commerce, enfocada en la comercializacion de indumentaria deportiva. ">
-    <meta name="keywords" content="Deportivo, Ropa Deportiva, Calzado, Remeras, Short, Ejercicio, Deporte, Promociones, Descuentos">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Grosso Augusto, Castillo Javier, Garcia Gonzalo, Insinga Alejandro, Singh Mauro Alejandro"
+    />
+    <meta
+      name="description"
+      content="Pagina E-Commerce, enfocada en la comercializacion de indumentaria deportiva. "
+    />
+    <meta
+      name="keywords"
+      content="Deportivo, Ropa Deportiva, Calzado, Remeras, Short, Ejercicio, Deporte, Promociones, Descuentos"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>RollingSport</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container">
-              <a class="navbar-brand marca" href="#">RollingSport</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  <a class="nav-link" href="#">Nosotros</a>
-                  <a class="nav-link" href="#">Contacto</a>
-                  <a class="nav-link" href="./galeria.html">Productos</a>
-                </div>
-                <div class="navbar-nav ms-auto gap-3">
-                    <form class="d-flex gap-3 mb-1" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
-                        <a href="#"><button class="btn btn-outline-primary"><i class="bi bi-cart"></i></button></a>
-                    </form>
-                </div>
-                <div class="navbar-nav ms-auto gap-1">
-                    <button class="btn btn-primary">Login</button>
-                    <button class="btn btn-primary">Crear Cuenta</button>
-                </div>
-              </div>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <a class="navbar-brand marca" href="#">RollingSport</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="#">Nosotros</a>
+              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="./galeria.html">Productos</a>
             </div>
-          </nav>
+            <div class="navbar-nav ms-auto gap-3">
+              <form class="d-flex gap-3 mb-1" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar..."
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-primary" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+                <a href="#"
+                  ><button class="btn btn-outline-primary">
+                    <i class="bi bi-cart"></i></button
+                ></a>
+              </form>
+            </div>
+            <div class="navbar-nav ms-auto gap-1">
+              <button class="btn btn-primary">Login</button>
+              <button class="btn btn-primary">Crear Cuenta</button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
       <div id="carouselIndicators" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/1.jpg" class="d-block w-100 imagen i1" alt="...">
+            <img src="./img/1.jpg" class="d-block w-100 imagen i1" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="./img/indu_indumentaria-scaled.jpg" class="d-block w-100 imagen i2" alt="...">
+            <img
+              src="./img/indu_indumentaria-scaled.jpg"
+              class="d-block w-100 imagen i2"
+              alt="..."
+            />
           </div>
           <div class="carousel-item">
-            <img src="./img/28780.png" class="d-block w-100 imagen i3" alt="...">
+            <img
+              src="./img/28780.png"
+              class="d-block w-100 imagen i3"
+              alt="..."
+            />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <section class="container-fluid" id="seccion-categorias-home">
-       <section class="row">
-         <article class="col-sm-12 col-md-4 d-flex justify-content-center">
-            <a class="categorias-home" id="Categoria-Hombre"> 
-              <h4 class="nombre-categoria-home" >Hombre</h4>
+      <section class="container-" id="seccion-categorias-home">
+        <section class="row">
+          <article class="col-sm-12 col-md-4 mt-5 d-flex justify-content-center">
+            <a class="categorias-home" id="Categoria-Hombre">
+              <h4 class="nombre-categoria-home">Hombre</h4>
             </a>
           </article>
-         <article class="col-sm-12 col-md-4 d-flex justify-content-center" >
-            <a class="categorias-home" id="Categoria-Niños">  
+          <article class="col-sm-12 col-md-4 mt-5 d-flex justify-content-center">
+            <a class="categorias-home" id="Categoria-Niños">
               <h4 class="nombre-categoria-home">Niños</h4>
             </a>
           </article>
-         <article class="col-sm-12 col-md-4 d-flex justify-content-center">
-            <a class="categorias-home" id="Categoria-Mujeres"> 
+          <article class="col-sm-12 col-md-4 mt-5 d-flex justify-content-center">
+            <a class="categorias-home" id="Categoria-Mujeres">
               <h4 class="nombre-categoria-home">Mujeres</h4>
             </a>
-         </article>
-       </section>
+          </article>
+        </section>
+      </section>
+      <section class="seccion-publicidad-home">
+        <p class="ms-5 fs-5">Publicidad</p>
+        <section class="publicidad-home">
+          <img
+            src="./img/Publicidad Home/foto-banner-nike.webp"
+            alt=""
+            class="img-fluid"
+          />
+        </section>
+      </section>
+      <section class="categorias-2-home">
+        <section class="container">
+          <h4 class="m-3">Categorias</h4>
+          <article
+            class="row mt-1 flex-row d-flex justify-content-center gap-3"
+          >
+            <a
+              class="categorias-home col-sm-12 col-md-3 align-content-center justify-content-center"
+              id="Categoria-Camperas"
+            >
+              <h4>Camperas Y Buzos</h4>
+            </a>
+            <a
+              class="categorias-home col-sm-12 col-md-3 align-content-center"
+              id="Categoria-Pantalones"
+            >
+              <h4>Pantalones Y Shorts</h4>
+            </a>
+            <a
+              class="categorias-home col-sm-12 col-md-3 align-content-center"
+              id="Categoria-Remeras"
+            >
+              <h4>Remeras</h4>
+            </a>
+            <a
+              class="categorias-home col-sm-12 col-md-3 align-content-center"
+              id="Categoria-Zapatillas"
+            >
+              <h4>Zapatillas</h4>
+            </a>
+          </article>
+        </section>
+      </section>
+      <section class="seccion-novedades container">
+        <div>
+          <h4 class="m-3">Novedades</h4>
+        </div>
+        <section class="row d-flex justify-content-center row-novedades">
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="./img/img-novedades/DSC01458-Photoroom-Photoroom.webp"
+                alt="Zapatillas"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Zapatillas Le Coq Sportif Lcs R850</h6>
+                <a class="btn btn-primary w-100"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="./img/img-novedades/FIF01L00249-2354-1-Photoroom.webp"
+                alt="Zapatillas"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Zapatillas ACD Classic Verde Hombre</h6>
+                <a class="btn btn-primary w-100"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="./img/img-novedades/fila_F02L00208_4559_00-Photoroom.webp"
+                alt="Zapatillas"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Zapatillas Fila Mujer ACD Classic Blanco</h6>
+                <a class="btn btn-primary w-100"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="https://www.indy.com.ar/cdn/shop/files/DSC06909-Photoroom.webp?v=1742576916&width=493"
+                alt="Zapatillas"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Zapatillas Le Coq Sportif Omegar</h6>
+                <a class="btn btn-primary w-100"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="row d-flex justify-content-center mt-5">
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="./img/img-novedades/597541-800-800.webp"
+                alt="Zapatillas"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Nike Dri-FIT Totality</h6>
+                <a class="btn btn-primary w-100"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="./img/img-novedades/495009-800-800.webp"
+                alt="Zapatillas"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Remera Nike SB</h6>
+                <a class="btn btn-primary w-100"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-3 col-md-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="https://nikearprod.vtexassets.com/arquivos/ids/1251070-800-800?width=800&height=800&aspect=true"
+                alt="Zapatillas"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Nike Rise 365 "Kipchoge"</h6>
+                <a class="btn btn-primary w-100"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="https://nikearprod.vtexassets.com/arquivos/ids/1077740-800-800?width=800&height=800&aspect=true"
+                alt="Zapatillas"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Nike Element</h6>
+                <a class="btn btn-primary w-100"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="row mt-5 d-flex justify-content-evenly">
+          <p class="fs-5 mt-5">Publicidad</p>
+          <article class="col-4 card-publicidad-2 img-fluid">
+            <img
+              src="./img/Publicidad Home/entity576_square_Cb0F10X.webp"
+              alt="PublicidadMP"
+              class="w-100 py-2"
+            />
+          </article>
+          <article class="col-4 card-publicidad-2 img-fluid">
+            <img
+              src="./img/Publicidad Home/personal-flow-vert-white.jpg"
+              alt="PublicidadPersonalFlow"
+              class="w-100 h-100 p-2"
+            />
+          </article>
+          <article class="col-4 card-publicidad-2 img-fluid">
+            <img
+              src="./img/Publicidad Home/descarga.png"
+              class="w-100 h-100 p-2"
+            />
+          </article>
+        </section>
       </section>
     </main>
     <script src="./js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>

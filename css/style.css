@@ -4,7 +4,14 @@
   font-family: "LilitaOne";
   src: url("../fonts/LilitaOne-Regular.ttf");
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+  background-image: url("../img/Texturelabs_Grunge_339M.jpg");
+}
 .marca {
   font-family: "LilitaOne", sans-serif;
   font-size: 1.3rem;
@@ -110,36 +117,56 @@
 }
 #seccion-categorias-home {
   margin: 0 0 0 0;
-  background-color: rgba(255, 255, 255, 0.886);
-  padding: 50px 110px;
-}
-.categorias-home {
-  text-decoration: none;
-  color: black;
-  text-shadow: 5px black;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.148);
-  font-weight: bolder;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.47);
-  border-radius: 15px;
-  width: 455px;
-  height: 555px;
-}
-.categorias-home:hover {
-  box-shadow: 5px 5px 5px 5px rgba(104, 101, 101, 0.368);
-  width: 455px;
-  height: 555px;
+  padding: 50px;
 }
 
+.categorias-home {
+  color: rgb(82, 82, 189);
+  text-decoration: none;
+  position: relative;
+  width: 250px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.categorias-home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease-in-out;
+}
+
+.categorias-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.708) 0%, rgba(0, 0, 0, 0) 100%);
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.categorias-home:hover::before {
+  opacity:0;}
+.categorias-home h3 {
+z-index: 10;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0,0.7);
+}
 #Categoria-Hombre {
   background-image: url("../img/img-categorias/Categoria-Hombre.jpg" );
   background-size: cover;
 background-position: 600px;
-}
-#Categoria-Hombre:hover{
-  backdrop-filter: blur(1px);
 }
 #Categoria-Niños {
   background-image: url("../img/img-categorias/Categoria-niños.jpg");
@@ -153,39 +180,97 @@ background-position: 600px;
 }
 
 .nombre-categoria-home{
+  text-decoration: none;
   padding: 35px 40px ;
-  background-color: rgba(0, 0, 0, 0.459);
+z-index: 2;
 font-weight: 700;
-color:rgb(255, 255, 255);
+color: rgb(82, 82, 189);
 box-shadow: 150px black;
 }
+.publicidad-home{
+  padding: 30px 150px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.categorias-2-home{
+  margin: 50px 0 ;
+}
+
+#Categoria-Camperas{
+background-image: url("../img/img-categorias/Buzo_con_Capucha_Future_Icons_3_Tiras_Negro_JD4838_23_hover_model.avif");
+background-size: cover;
+}
+#Categoria-Pantalones{
+background-image: url("../img/img-categorias/Pantalon_Parachute_Negro_JD5415_21_model.avif");
+background-size: cover;
+}
+
+#Categoria-Remeras{
+  background-image: url("../img/img-categorias/Remera_Adicolor_Teamgeist_Blanco_JP1113_23_hover_model.avif");
+  background-size: cover;
+  background-position: center;
+}
+#Categoria-Zapatillas{
+  background-image: url("../img/img-categorias/ZAPATILLAS_SL_72_RS_MERCEDES_Negro_JQ1782_01_00_standard.avif");
+  background-size: cover;
+}
+.card-novedades{
+  box-shadow: 10px 10px 18px -5px rgba(0,0,0,1);
+  -webkit-box-shadow: 10px 10px 18px -5px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 18px -5px rgba(0,0,0,1);
+  background-color: rgb(150, 196, 233);
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius:5px;
+  margin-top: 45px;
+  width:250px;
+  height: 100%;
+
+}
+.card-img-novedades{
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  border-radius: 5px;
+  width: 100%;
+}
+.card-body-home{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+}
+.card-publicidad-2{
+  border: 1px solid black ;
+  border-radius: 13px;
+  width: 150px;
+  height: 140px;
+}
+
 
 @media (max-width: 767px) {
   .imgmenu .textoimg {
     width: 80%;
     height: 90%;
   }
-  .categorias-home{
-    margin-top: 55px;
+
+  .seccion-publicidad-home{
+    display: none;
   }
 }
 @media (min-width: 767px)and(max-width:992px) {
   #seccion-categorias-home {
     padding: 50px 30px;
   }
+
 }
-@media (min-width: 767px)and(max-width:992px) {
-  #Categoria-Hombre {
-  background-position-x: right;
-  }
-  #Categoria-Niños {
-    background-image: url("../img/img-categorias/Categoria-niños.jpg");
-    background-size: cover;
-    background-position: 600px;
-  }
-  #Categoria-Mujeres {
-    background-image: url("../img/img-categorias/Categoria-Mujer.jpg");
-    background-size: cover;
-    background-position: 600px;
-  }
+@media (min-width: 374px)and(max-width:767px) {
+
 }
