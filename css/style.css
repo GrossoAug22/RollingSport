@@ -276,7 +276,7 @@ justify-content: space-between;
 }
 @media (min-width: 374px)and(max-width:767px) {
 
-=======
+
 .cardproductos {
   display: flex;
   justify-content: space-between;
@@ -360,10 +360,12 @@ footer {
 .footer-icons .bi-instagram:hover {
   background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
   -webkit-background-clip: text;
+
   -webkit-text-fill-color: transparent;
 }
 
 /* Para agrandar un poco el ícono en hover */
 .footer-icons i:hover {
   transform: scale(1.2);
+}
 }
