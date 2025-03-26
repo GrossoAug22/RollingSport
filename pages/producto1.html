@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Grosso Augusto, Castillo Javier, Garcia Gonzalo, Insinga Alejandro, Singh Mauro Alejandro"
+    />
+    <meta
+      name="description"
+      content="Pagina E-Commerce, enfocada en la comercializacion de indumentaria deportiva. "
+    />
+    <meta
+      name="keywords"
+      content="Deportivo, Ropa Deportiva, Calzado, Remeras, Short, Ejercicio, Deporte, Promociones, Descuentos"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>RollingSport</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <a class="navbar-brand marca" href="../index.html">RollingSport</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../index.html"
+                >Inicio</a
+              >
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              <a class="nav-link" href="./galeria.html">Productos</a>
+              <a class="nav-link" href="./Contacto.html">Contacto</a>
+            </div>
+            <div class="navbar-nav ms-auto gap-3">
+              <form class="d-flex gap-3 mb-1" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar..."
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-primary" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+                <a href="./carrito de compras.html"
+                  ><button class="btn btn-outline-primary">
+                    <i class="bi bi-cart"></i></button
+                ></a>
+              </form>
+            </div>
+            <div class="navbar-nav ms-auto gap-1">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalcrearcuenta"
+              >
+                Login
+              </button>
+              <button type="button" class="btn btn-primary">Crear Cuenta</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <h1 class="text-center">Campera de Trekking</h1>
+        <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex justify-content-center align-items-center gy-3">
+                    <div>
+                        <figure>
+                            <img src="../img/campera-de-hombre-viggo.jpg" class="img-fluid" alt="Imagen del producto">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 gy-3">
+                    <div>
+                        <h3>Caracteristicas:</h3>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Color</td>
+                                        <td>Azul</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Talles</td>
+                                        <td>S-M-L</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actividad</td>
+                                        <td>Trekking - Montañismo</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="text-justify-custom">
+                        <h3>Descripción:</h3>
+                        <p>Tela exterior impermeable 100% poliéster, con relleno de microfibra de alta retención térmica. Lo que dificulta que el tejido absorba favoreciendo la impermeabilidad y antimanchas.</p>
+                        <p>No requiere uso de plancha.</p>
+                        <p>Ideal para la realización de deportes de invierno (ski, snowboard).</p>
+                        <ul>
+                            <li>Capucha fija con ajuste.</li>
+                            <li>Bolsillos internos.</li>
+                            <li>Cierres impermeables.</li>
+                            <li>Ventilación axilar.</li>
+                            <li>Costuras termoselladas.</li>
+                        </ul>
+                    </div>
+                    <p class="fs-4 text-primary">$35.000,00</p>
+                    <div class="mb-4">
+                        <a href="../pages/carrito de compras.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <h2 class="mb-4">Comentarios:</h2>
+                <div>
+                    <h5>Juan Pérez</h5>
+                    <small class="text-muted">Hace 2 días</small>
+                    <p >Excelente relación precio calidad.</p>
+                    <h5>Maria López</h5>
+                    <small class="text-muted">Hace 5 días</small>
+                    <p>Muy buena calidad del producto. ⭐⭐⭐⭐⭐</p>
+                    <h5>Carlos González</h5>
+                    <small class="text-muted">Hace 1 semana</small>
+                    <p>La atención fue increíble y el producto era lo que esperaba.</p>
+                </div>
+              </section>
+    </div>
+    </main>
+    <div
+      class="modal fade"
+      id="modalcrearcuenta"
+      tabindex="-1"
+      aria-labelledby="modalcrearcuentaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="modalcrearcuentaLabel">
+              Ingresá a tu cuenta
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Completá los siguientes datos para ingresar a tu cuenta</p>
+            <form id="creatucuenta" autocomplete="off">
+              <div class="row">
+                <div class="col-6">
+                  <img src="./img/LOGO.jpeg" alt="logologin" class="img-fluid h-100">
+                </div>
+                <div class="col-6">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Usuario/Email</label>
+                <input
+                  type="nombre"
+                  class="form-control"
+                  id="nombre"
+                  aria-describedby="nombreHelp"
+                  maxlength="40"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="contraseña"
+                  minlength="6"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="google" class="form-label"
+                  >Iniciar sesión con Google
+                </label>
+                <a href="./pages/error404.html">
+                <button type="button" class="w-100"><i class="bi bi-google"></i></button></a>
+              </div>
+              <div class="mb-3">
+                <label for="google" class="form-label"
+                  >Iniciar sesión con Facebook
+                </label>
+                <a href="./pages/error404.html">
+                <button type="button" class="w-100"><i class="bi bi-facebook"></i></button></a>
+              </div>
+            </form>
+          </div>
+        </div>
+          <div class="modal-footer">
+            <a href="./pages/error404.html">¿Olvidaste tu contraseña?</a>
+            <a href="./pages/error404.html"><button type="button" class="btn btn-primary">
+              Ingresar
+            </button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer class="bg-dark text-white py-4 mt-auto">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <h5>Información</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Ventas por mayor</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Medios de pago</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Promos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <h5>Mi Cuenta</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./registro.html"
+                  class="text-white text-decoration-none"
+                  >Registrarme</a
+                >
+              </li>
+              <li>
+                <a href="../index.html" class="text-white text-decoration-none">Ingresar</a>
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Mis pedidos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Mis direcciones</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Botón de arrepentimiento</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Favoritos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <h5>Centro de Atención</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Libro de quejas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >WhatsApp</a
+                >
+              </li>
+              <li>
+                <small class="text-secondary">Lunes a Viernes: 9 a 20 hs</small>
+              </li>
+              <li><small class="text-secondary">Sábados: 9 a 17 hs</small></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3 mb-3 text-center">
+            <img src="../img/LOGO.jpeg" alt="Logo" width="150" class="mb-3" />
+            <div class="footer-icons">
+              <p class="mb-1">Nuestras redes:</p>
+              <a href="./error404.html" class="text-white me-2"
+                ><i class="bi bi-facebook fs-4"></i
+              ></a>
+              <a href="./error404.html" class="text-white me-2"
+                ><i class="bi bi-twitter-x fs-4"></i
+              ></a>
+              <a href="./error404.html" class="text-white"
+                ><i class="bi bi-instagram fs-4"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

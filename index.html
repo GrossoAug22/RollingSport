@@ -1,80 +1,550 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Grosso Augusto, Castillo Javier, Garcia Gonzalo, Insinga Alejandro, Singh Mauro Alejandro">
-    <meta name="description" content="Pagina E-Commerce, enfocada en la comercializacion de indumentaria deportiva. ">
-    <meta name="keywords" content="Deportivo, Ropa Deportiva, Calzado, Remeras, Short, Ejercicio, Deporte, Promociones, Descuentos">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-      <!-- Bootstrap Icons -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Grosso Augusto, Castillo Javier, Garcia Gonzalo, Insinga Alejandro, Singh Mauro Alejandro"
+    />
+    <meta
+      name="description"
+      content="Pagina E-Commerce, enfocada en la comercializacion de indumentaria deportiva. "
+    />
+    <meta
+      name="keywords"
+      content="Deportivo, Ropa Deportiva, Calzado, Remeras, Short, Ejercicio, Deporte, Promociones, Descuentos"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>RollingSport</title>
-</head>
-<body>
-   <main></main>
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-auto">
-        <div class="container">
-            <div class="row text-center text-md-start">
-                
-                <!-- Información -->
-                <div class="col-12 col-md-4 col-lg-3 mb-3">
-                    <h5>Información</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Preguntas Frecuentes</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Ventas por mayor</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Medios de pago</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Promos</a></li>
-                    </ul>
-                </div>
-
-                
-                <!-- Cuenta -->
-                <div class="col-12 col-md-4 col-lg-3 mb-3">
-                    <h5>Mi Cuenta</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Registrarme</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Ingresar</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Mis pedidos</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Mis direcciones</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Botón de arrepentimiento</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Favoritos</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Atención al Cliente -->
-                <div class="col-12 col-md-4 col-lg-3 mb-3">
-                    <h5>Centro de Atención</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Libro de quejas</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">WhatsApp</a></li>
-                        <li><small class="text-secondary">Lunes a Viernes: 9 a 20 hs</small></li>
-                        <li><small class="text-secondary">Sábados: 9 a 17 hs</small></li>
-                    </ul>
-                </div>
-                
-                <!-- Logo y Redes -->
-                <div class="col-12 col-lg-3 mb-3 text-center">
-                    <img src="./img/RollingSport para modificar fondo.jpg" alt="Logo" width="150" class="mb-3">
-                    <!-- Íconos vectoriales debajo del logo -->
-    
-
-    <!-- Redes sociales -->
-    <div class="footer-icons">
-        <p class="mb-1">Nuestras redes:</p>
-        <a href="#" class="text-white me-2"><i class="bi bi-facebook fs-4"></i></a>
-        <a href="#" class="text-white me-2"><i class="bi bi-twitter-x fs-4"></i></a>
-        <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
-    </div>
-                </div>
-                
-            </div>
+  </head>
+  <body>
+    <header>
+      <nav
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <a class="navbar-brand marca" href="../index.html">RollingSport</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="../index.html"
+              >Inicio</a
+            >
+            <a class="nav-link" href="./pages/galeria.html">Productos</a>
+            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+            <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
+          </div>
+          <div class="navbar-nav ms-auto gap-3">
+            <form class="d-flex gap-3 mb-1" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar..."
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-primary" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+              <a href="./pages/carrito de compras.html"
+                ><button class="btn btn-outline-primary">
+                  <i class="bi bi-cart"></i></button
+              ></a>
+            </form>
+          </div>
+          <div class="navbar-nav ms-auto gap-1">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalingresocuenta"
+            >
+              Login
+            </button>
+              <a type="button" class="btn btn-primary" href="./pages/registro.html"  >Crear Cuenta</a>
+          </div>
         </div>
+      </div>
+    </nav>
+    </header>
+    <main>
+      <div id="carouselIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <img src="./img/1.jpg" class="d-block w-100 imagen i1" alt="img-1" />
+
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/indu_indumentaria-scaled.jpg"
+              class="d-block w-100 imagen i2"
+
+              alt="img-2"/>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/28780.png"
+              class="d-block w-100 imagen i3"
+
+              alt="img-3" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section class="container-" id="seccion-categorias-home">
+        <section class="row">
+          <article class="col-sm-12 col-md-4 mt-5 d-flex justify-content-center">
+            <a class="categorias-home" id="Categoria-Hombre" href="./pages/galeria.html">
+              <h4 class="nombre-categoria-home">Hombre</h4>
+            </a>
+          </article>
+          <article class="col-sm-12 col-md-4 mt-5 d-flex justify-content-center">
+            <a class="categorias-home" id="Categoria-Niños" href="./pages/galeria.html">
+              <h4 class="nombre-categoria-home">Niños</h4>
+            </a>
+          </article>
+          <article class="col-sm-12 col-md-4 mt-5 d-flex justify-content-center">
+            <a class="categorias-home" id="Categoria-Mujeres" href="./pages/galeria.html">
+              <h4 class="nombre-categoria-home">Mujeres</h4>
+            </a>
+          </article>
+        </section>
+      </section>
+      <section class="seccion-publicidad-home">
+        <p class="ms-5 fs-5">Publicidad</p>
+        <section class="publicidad-home">
+          <img
+            src="./img/Publicidad Home/foto-banner-nike.webp"
+            alt="publicidad-home"
+            class="img-fluid"
+          />
+        </section>
+      </section>
+      <section class="categorias-2-home">
+        <section class="container">
+          <h4 class="m-3">Categorias</h4>
+          <article
+            class="row mt-1 flex-row d-flex justify-content-center gap-3"
+          >
+            <a
+              class="categorias-home col-sm-12 col-md-3 align-content-center justify-content-center"
+              id="Categoria-Camperas"
+              href="./pages/camperasybuzos.html"
+            >
+              <h4>Camperas Y Buzos</h4>
+            </a>
+            <a
+              class="categorias-home col-sm-12 col-md-3 align-content-center"
+              id="Categoria-Pantalones"
+              href="./pages/galeria.html"
+            >
+              <h4>Pantalones Y Shorts</h4>
+            </a>
+            <a
+              class="categorias-home col-sm-12 col-md-3 align-content-center"
+              id="Categoria-Remeras"
+              href="./pages/galeria.html"
+            >
+              <h4>Remeras</h4>
+            </a>
+            <a
+              class="categorias-home col-sm-12 col-md-3 align-content-center"
+              id="Categoria-Zapatillas"
+              href="./pages/galeria.html"
+            >
+              <h4>Zapatillas</h4>
+            </a>
+          </article>
+        </section>
+      </section>
+      <section class="seccion-novedades container">
+        <div>
+          <h4 class="m-3">Novedades</h4>
+        </div>
+        <section class="row d-flex justify-content-center row-novedades">
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="./img/img-novedades/DSC01458-Photoroom-Photoroom.webp"
+                alt="Zapatillas"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Zapatillas Le Coq Sportif Lcs R850</h6>
+                <a class="btn btn-primary w-100" href="./pages/galeria.html"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="./img/img-novedades/FIF01L00249-2354-1-Photoroom.webp"
+                alt="Zapatillas"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Zapatillas ACD Classic Verde Hombre</h6>
+                <a class="btn btn-primary w-100" href="./pages/galeria.html"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="./img/img-novedades/fila_F02L00208_4559_00-Photoroom.webp"
+                alt="Zapatillas"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Zapatillas Fila Mujer ACD Classic Blanco</h6>
+                <a class="btn btn-primary w-100" href="./pages/galeria.html"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="https://www.indy.com.ar/cdn/shop/files/DSC06909-Photoroom.webp?v=1742576916&width=493"
+                alt="Zapatillas"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Zapatillas Le Coq Sportif Omegar</h6>
+                <a class="btn btn-primary w-100" href="./pages/galeria.html"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="row d-flex justify-content-center mt-5">
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="./img/img-novedades/597541-800-800.webp"
+                alt="indumentaria"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Nike Dri-FIT Totality</h6>
+                <a class="btn btn-primary w-100" href="./pages/galeria.html"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="./img/img-novedades/495009-800-800.webp"
+                alt="Indumentaria"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Remera Nike SB</h6>
+                <a class="btn btn-primary w-100" href="./pages/galeria.html"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-3 col-md-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="https://nikearprod.vtexassets.com/arquivos/ids/1251070-800-800?width=800&height=800&aspect=true"
+                alt="Indumentaria"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Nike Rise 365 "Kipchoge"</h6>
+                <a class="btn btn-primary w-100" href="./pages/galeria.html"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
+            <div class="card-novedades">
+              <img
+                src="https://nikearprod.vtexassets.com/arquivos/ids/1077740-800-800?width=800&height=800&aspect=true"
+                alt="Indumentaria"
+                class="card-img-novedades"
+              />
+              <div class="card-body-home">
+                <h6>Nike Element</h6>
+                <a class="btn btn-primary w-100" href="./pages/galeria.html"> Ver Mas </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        </section>
+        <section class="container">
+        <section class="row py-5 d-flex justify-content-evenly">
+          <p class="fs-5 mt-5">Publicidad</p>
+          <article class="col-sm-12 col-md-4 card-publicidad-2 shadow-lg">
+            <img
+              src="./img/Publicidad Home/entity576_square_Cb0F10X.webp"
+              alt="PublicidadMP"
+              class="w-100 py-2"
+            />
+          </article>
+          <article class="col-sm-12 col-md-4 card-publicidad-2 shadow-lg">
+            <img
+              src="./img/Publicidad Home/personal-flow-vert-white.jpg"
+              alt="PublicidadPersonalFlow"
+              class="w-100 h-100 p-2"
+            />
+          </article>
+          <article class="col-sm-12 col-md-4 card-publicidad-2 shadow-lg">
+            <img
+              src="./img/Publicidad Home/descarga.png"
+              alt="PublicidadNX"
+              class="w-100 h-100 p-2"
+            />
+          </article>
+        </section>
+      </section>
+    </main>
+    <div
+      class="modal fade"
+      id="modalingresocuenta"
+      tabindex="-1"
+      aria-labelledby="modalingresocuentaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="modalingresocuentaLabel">
+              Ingresá a tu cuenta
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Completá los siguientes datos para ingresar a tu cuenta</p>
+            <form id="ingresocuenta" autocomplete="off">
+              <div class="row">
+                <div class="col-6">
+                  <img src="./img/LOGO.jpeg" alt="logologin" class="img-fluid h-100">
+                </div>
+                <div class="col-6">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Usuario/Email</label>
+                <input
+                  type="nombre"
+                  class="form-control"
+                  id="nombre"
+                  aria-describedby="nombreHelp"
+                  maxlength="40"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="contraseña"
+                  minlength="6"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="google" class="form-label"
+                  >Iniciar sesión con Google
+                </label>
+                <a href="./pages/error404.html">
+                <button type="button" class="w-100"><i class="bi bi-google"></i></button></a>
+              </div>
+              <div class="mb-3">
+                <label for="google" class="form-label"
+                  >Iniciar sesión con Facebook
+                </label>
+                <a href="./pages/error404.html">
+                <button type="button" class="w-100"><i class="bi bi-facebook"></i></button></a>
+              </div>
+            </form>
+          </div>
+        </div>
+          <div class="modal-footer">
+            <a href="./pages/error404.html">¿Olvidaste tu contraseña?</a>
+            <a href="./pages/error404.html"><button type="button" class="btn btn-primary">
+              Ingresar
+            </button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer class="bg-dark text-white py-4 mt-auto">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <h5>Información</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./pages/error404.html"
+                  class="text-white text-decoration-none"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages/error404.html"
+                  class="text-white text-decoration-none"
+                  >Ventas por mayor</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages/error404.html"
+                  class="text-white text-decoration-none"
+                  >Medios de pago</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages/error404.html"
+                  class="text-white text-decoration-none"
+                  >Promos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <h5>Mi Cuenta</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../pages/registro.html"
+                  class="text-white text-decoration-none"
+                  >Registrarme</a
+                >
+              </li>
+              <li>
+                <a type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalingresocuenta" class="text-white text-decoration-none">Ingresar</a>
+              </li>
+              <li>
+                <a
+                  href="./pages/error404.html"
+                  class="text-white text-decoration-none"
+                  >Mis pedidos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages/error404.html"
+                  class="text-white text-decoration-none"
+                  >Mis direcciones</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages/error404.html"
+                  class="text-white text-decoration-none"
+                  >Botón de arrepentimiento</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages/error404.html"
+                  class="text-white text-decoration-none"
+                  >Favoritos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <h5>Centro de Atención</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./pages/error404.html"
+                  class="text-white text-decoration-none"
+                  >Libro de quejas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages/error404.html"
+                  class="text-white text-decoration-none"
+                  >WhatsApp</a
+                >
+              </li>
+              <li>
+                <small class="text-secondary">Lunes a Viernes: 9 a 20 hs</small>
+              </li>
+              <li><small class="text-secondary">Sábados: 9 a 17 hs</small></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3 mb-3 text-center">
+            <img src="../img/LOGO.jpeg" alt="Logo" width="150" class="mb-3" />
+            <div class="footer-icons">
+              <p class="mb-1">Nuestras redes:</p>
+              <a href="./pages/error404.html" class="text-white me-2"
+                ><i class="bi bi-facebook fs-4"></i
+              ></a>
+              <a href="./pages/error404.html" class="text-white me-2"
+                ><i class="bi bi-twitter-x fs-4"></i
+              ></a>
+              <a href="./pages/error404.html" class="text-white"
+                ><i class="bi bi-instagram fs-4"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="./js/bootstrap.min.js"></script>
-    
-</body>
+  </body>
 </html>
