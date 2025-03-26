@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Grosso Augusto, Castillo Javier, Garcia Gonzalo, Insinga Alejandro, Singh Mauro Alejandro"
+    />
+    <meta
+      name="description"
+      content="Pagina E-Commerce, enfocada en la comercializacion de indumentaria deportiva. "
+    />
+    <meta
+      name="keywords"
+      content="Deportivo, Ropa Deportiva, Calzado, Remeras, Short, Ejercicio, Deporte, Promociones, Descuentos"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>RollingSport</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <a class="navbar-brand marca" href="../index.html">RollingSport</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Inicio</a
+              >
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              <a class="nav-link" href="./galeria.html">Productos</a>
+              <a class="nav-link" href="./Contacto.html">Contacto</a>
+              
+            </div>
+            <div class="navbar-nav ms-auto gap-3">
+              <form class="d-flex gap-3 mb-1" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar..."
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-primary" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+                <a href="./carrito de compras.html"
+                  ><button class="btn btn-outline-primary">
+                    <i class="bi bi-cart"></i></button
+                ></a>
+              </form>
+            </div>
+            <div class="navbar-nav ms-auto gap-1">
+              <button class="btn btn-primary">Login</button>
+              <a href="./registro.html"><button class="btn btn-primary">Crear Cuenta</button></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="py-4">
+        <h2 class="text-center fw-bold">Registración</h2>
+      </section>
+      <section class="container">
+        <div class="row">
+          <article class="col-12 col-md-6 mb-3 text-center">
+            <img src="../img/LOGO.jpeg" alt="logo" class="img-fluid h-50"/>
+            <h2 class="py-3 fw-bold text-center">
+              TUS BENEFICIOS TE ESPERAN </h2>
+             <p class="fs-4"> Realizá pedidos sin gastos de envío, conseguí códigos de descuento
+              y productos exclusivos en RollingSport.</p>
+            <button type="submit" class="btn btn-primary ">
+              BENEFICIOS Y PROMOCIONES
+            </button>
+          </article>
+          <article class="col-12 col-md-6 mb-3">
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label"
+                  >Nombre y Apellido *</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Gonzalo Garcia"
+                  maxlength="40"
+                  required
+                  id="nombre"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="nombre" class="form-label"
+                  >Nombre de Usuario *</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="RollingUser"
+                  maxlength="25"
+                  required
+                  id="nombre"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  required
+                  id="email"
+                  minlength="10"
+                  maxlength="50"
+                  required
+                  id="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telefono"
+                  maxlength="15"
+                />
+              </div>
+              <label for="provincia" class="form-label mb-3">Provincia</label>
+              <select id="opciones" name="opciones" class="form-select mb-3">
+                <option value="" selected disabled>
+                  Selecciona una Provincia
+                </option>
+                <option value="opcion1">Buenos Aires</option>
+                <option value="opcion2">Ciudad de Buenos Aires</option>
+                <option value="opcion3">Jujuy</option>
+                <option value="opcion4">Catamarca</option>
+                <option value="opcion4">Chaco</option>
+                <option value="opcion4">Chubut</option>
+                <option value="opcion4">Cordoba</option>
+                <option value="opcion4">Corrientes</option>
+                <option value="opcion4">Entre Ríos</option>
+                <option value="opcion4">Formosa</option>
+                <option value="opcion4">Jujuy</option>
+                <option value="opcion4">La Pampa</option>
+                <option value="opcion4">La Rioja</option>
+                <option value="opcion4">Mendoza</option>
+                <option value="opcion4">Misiones</option>
+                <option value="opcion4">Neuquen</option>
+                <option value="opcion4">Rio Negro</option>
+                <option value="opcion4">Salta</option>
+                <option value="opcion4">San Juan</option>
+                <option value="opcion4">San Luis</option>
+                <option value="opcion4">Santa Cruz</option>
+                <option value="opcion4">Santa Fe</option>
+                <option value="opcion4">Santiago del Estero</option>
+                <option value="opcion4">Tierra del Fuego</option>
+                <option value="opcion4">Tucumán</option>
+              </select>
+              <div class="mb-3">
+                <label for="domicilio" class="form-label">Domicilio</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="domicilio"
+                  maxlength="30"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="cPostal" class="form-label">Código Postal</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="cPostal"
+                  maxlength="10"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contraseña" class="form-label">Contraseña*</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="contraseña"
+                  maxlength="15"
+                  minlength="6"
+                  required
+                  id="contraseña"
+                />
+              </div>
+              <div class="form-text my-3">
+                Los campos con (*) son obligatorios
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Registrar
+              </button>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

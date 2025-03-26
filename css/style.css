@@ -120,6 +120,7 @@ main{
   padding: 50px;
 }
 
+
 .categorias-home {
   color: rgb(82, 82, 189);
   text-decoration: none;
@@ -275,4 +276,94 @@ justify-content: space-between;
 }
 @media (min-width: 374px)and(max-width:767px) {
 
+=======
+.cardproductos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sombracard {
+  box-shadow: 0 4px 8px rgba(23, 23, 23, 0.343);
+}
+
+.card-img-top {
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.8s, filter 0.5s;
+}
+
+@media (max-width: 767px){
+    .imgmenu .textoimg {
+        width: 80%;
+        height: 90%;
+    }
+}
+
+.rounded-circle {
+  width: 100px;  
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.card-img-top:hover {
+  transform: scale(1.2);
+  filter: grayscale(20%);
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.error-image {
+  max-width: 100%;
+  width: 800px; /* Ajusta el tamaño según necesites */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.footer-icons i {
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Suaviza la animación */
+  color: white; /* Color base */
+}
+
+/* Facebook: azul en hover */
+.footer-icons .bi-facebook:hover {
+  color: #1877f2;
+}
+
+/* Twitter: celeste en hover */
+.footer-icons .bi-twitter-x:hover {
+  color: #10dcf7;
+}
+
+/* Instagram: blanco normal, pero gradiente en hover */
+.footer-icons .bi-instagram {
+  color: white; /* Color normal */
+}
+
+.footer-icons .bi-instagram:hover {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Para agrandar un poco el ícono en hover */
+.footer-icons i:hover {
+  transform: scale(1.2);
 }

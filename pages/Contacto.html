@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Grosso Augusto, Castillo Javier, Garcia Gonzalo, Insinga Alejandro, Singh Mauro Alejandro"
+    />
+    <meta
+      name="description"
+      content="Pagina E-Commerce, enfocada en la comercializacion de indumentaria deportiva. "
+    />
+    <meta
+      name="keywords"
+      content="Deportivo, Ropa Deportiva, Calzado, Remeras, Short, Ejercicio, Deporte, Promociones, Descuentos"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>RollingSport</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <a class="navbar-brand marca" href="../index.html">RollingSport</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Inicio</a
+              >
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              <a class="nav-link" href="./galeria.html">Productos</a>
+              <a class="nav-link active" href="./Contacto.html">Contacto</a>
+            </div>
+            <div class="navbar-nav ms-auto gap-3">
+              <form class="d-flex gap-3 mb-1" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar..."
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-primary" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+                <a href="./carrito de compras.html"
+                  ><button class="btn btn-outline-primary">
+                    <i class="bi bi-cart"></i></button
+                ></a>
+              </form>
+            </div>
+            <div class="navbar-nav ms-auto gap-1">
+              <button class="btn btn-primary">Login</button>
+              <a href="./registro.html"
+                ><button class="btn btn-primary">Crear Cuenta</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="py-4">
+        <h2 class="text-center fw-bold">Contacto</h2>
+      </section>
+      <section class="container">
+        <div class="row">
+          <article class="col-12 col-md-6 mb-3">
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label"
+                  >Nombre y Apellido *</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Juan Pérez"
+                  maxlength="40"
+                  required
+                  id="nombre"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  required
+                  id="email"
+                  minlength="10"
+                  maxlength="50"
+                  required
+                  id="email"
+                  placeholder="rollingsport@gmail.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telefono"
+                  maxlength="15"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="consulta" class="form-label"
+                  >Ingrese su consulta *</label
+                >
+                <textarea
+                  class="form-control"
+                  id="consulta"
+                  rows="5"
+                  required
+                  id="consulta"
+                  maxlength="500"
+                ></textarea>
+                <div class="form-text my-3">
+                  Los campos con (*) son obligatorios
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </article>
+          <article class="col-12 col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.7905291364277!2d-65.20716700000003!3d-26.836583299999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e1!3m2!1ses-419!2sar!4v1740442301332!5m2!1ses-419!2sar"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="w-100 h-100"
+            ></iframe>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-white py-4 mt-auto">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Información -->
+          <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <h5>Información</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Ventas por mayor</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Medios de pago</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Promos</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Cuenta -->
+          <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <h5>Mi Cuenta</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../pages/registro.html"
+                  class="text-white text-decoration-none"
+                  >Registrarme</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Ingresar</a>
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Mis pedidos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Mis direcciones</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Botón de arrepentimiento</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Favoritos</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Atención al Cliente -->
+          <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <h5>Centro de Atención</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >Libro de quejas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="text-white text-decoration-none"
+                  >WhatsApp</a
+                >
+              </li>
+              <li>
+                <small class="text-secondary">Lunes a Viernes: 9 a 20 hs</small>
+              </li>
+              <li><small class="text-secondary">Sábados: 9 a 17 hs</small></li>
+            </ul>
+          </div>
+
+          <!-- Logo y Redes -->
+          <div class="col-12 col-lg-3 mb-3 text-center">
+            <img src="../img/LOGO.jpeg" alt="Logo" width="150" class="mb-3" />
+            <!-- Íconos vectoriales debajo del logo -->
+
+            <!-- Redes sociales -->
+            <div class="footer-icons">
+              <p class="mb-1">Nuestras redes:</p>
+              <a href="./error404.html" class="text-white me-2"
+                ><i class="bi bi-facebook fs-4"></i
+              ></a>
+              <a href="./error404.html" class="text-white me-2"
+                ><i class="bi bi-twitter-x fs-4"></i
+              ></a>
+              <a href="./error404.html" class="text-white"
+                ><i class="bi bi-instagram fs-4"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
