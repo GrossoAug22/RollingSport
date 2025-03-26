@@ -261,7 +261,6 @@ main {
   transition: transform 0.8s, filter 0.5s;
 }
 
-
 .rounded-circle {
   width: 100px;
   height: 200px;
@@ -316,7 +315,6 @@ footer {
   transform: scale(1.2);
 }
 
-
 .card-img-top:hover {
   transform: scale(1.2);
   filter: grayscale(20%);
@@ -346,6 +344,7 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+}
 
   @media (max-width: 767px) {
     .imgmenu .textoimg {
@@ -358,6 +357,7 @@ footer {
     .imagen {
       height: 300px;
     }
+  }
   
     .i1 {
       object-position: 50% 30%;
@@ -366,5 +366,3 @@ footer {
     .i3 {
       object-position: 70% 13%;
     }
-  } 
-}
